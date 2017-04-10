@@ -71,13 +71,6 @@ class Needleman_Wunsch(object):
         print A + "\n"
         print B
 
-
-
-
-
-
-
-
 if __name__ == "__main__":
     if len(sys.argv) != 5:
         sys.exit("ERROR: %d argument(s) passed, but 4 were expected." %(len(sys.argv) - 1))
@@ -91,12 +84,4 @@ if __name__ == "__main__":
 
         alg = Needleman_Wunsch()
         alg.run()
-
-
-
-
-
-
-
-
-    
+        
