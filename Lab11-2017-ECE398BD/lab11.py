@@ -7,7 +7,7 @@ class Needleman_Wunsch(object):
     def __init__(self):
         self.fna1               = list(list(SeqIO.parse(sys.argv[1], "fasta"))[0].seq)
         self.fna2               = list(list(SeqIO.parse(sys.argv[2], "fasta"))[0].seq)
-        
+
         self.gap_p              = int(sys.argv[4])
         self.read_sub_matrix(sys.argv[3])
 
@@ -84,4 +84,3 @@ if __name__ == "__main__":
 
         alg = Needleman_Wunsch()
         alg.run()
-        
